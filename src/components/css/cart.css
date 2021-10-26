@@ -1,0 +1,16 @@
+.cart{
+  margin-left: auto;
+}
+
+.avatar{
+    width: 50px;
+}
+
+.iconCart{
+margin-right: 40px;
+}
+
+.content{
+    display: flex;
+    float: right;
+}

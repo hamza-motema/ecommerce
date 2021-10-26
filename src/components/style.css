@@ -1,0 +1,47 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+
+}
+
+.popupContent{
+    display: block;
+}
+
+.image{
+    width: 50%;
+}
+
+.popup-miniature{
+    display: flex;
+}
+
+.popup-miniature > img{
+border-radius: 2em;
+width: 20%;
+margin: 10px;
+}
+
+.iconNext, .iconPrevious{
+    bottom: 50%;
+position: fixed;
+background-color: burlywood ;
+border-radius: 50%;
+padding: 2%;
+}

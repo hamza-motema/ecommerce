@@ -14,3 +14,9 @@ body {
 	text-align: center;
     padding: 50px 300px 0px 300px;
 }
+
+@media (max-width: 1400px) {
+  body {
+    padding: 50px 100px 0px 100px;
+  }
+}

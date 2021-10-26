@@ -59,18 +59,13 @@ export default class ImagesSection extends Component {
                     <div className="card" id="card_1">
                         <div className="card__content">
                             <figure>
-
-
                                 <>
-                                    <img onClick={this.togglePopup.bind(this)} src={images[this.state.toggle]} alt="" className="photo" />
+                                    <img onClick={this.togglePopup.bind(this)} src={images[this.state.toggle]} alt="" />
                                 </>
-
                             </figure>
                         </div>
 
                     </div>
-
-
                     <div className="miniature">
                         {data.map(({ key }) => {
                             return (
@@ -79,7 +74,6 @@ export default class ImagesSection extends Component {
                                 </>
                             );
                         })}</div>
-
                 </div>
 
                 {this.state.showPopup ?

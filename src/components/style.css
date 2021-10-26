@@ -21,7 +21,11 @@
 }
 
 .popupContent{
-    display: block;
+      display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+        align-items: center;
+        justify-items: center;
 }
 
 .image{
@@ -29,7 +33,7 @@
 }
 
 .popup-miniature{
-    display: flex;
+    
 }
 
 .popup-miniature > img{
@@ -39,9 +43,11 @@ margin: 10px;
 }
 
 .iconNext, .iconPrevious{
-    bottom: 50%;
-position: fixed;
-background-color: burlywood ;
+background-color: burlywood;
 border-radius: 50%;
-padding: 2%;
+padding: 1px;
+display: block;
+font-size: 2em;
+cursor: pointer;
 }
+

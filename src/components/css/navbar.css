@@ -41,3 +41,9 @@ a:hover {
     margin-right: 50px;
     font-size: 24px;
 }
+
+@media (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+}

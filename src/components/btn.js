@@ -60,7 +60,7 @@ function Qbutton(props) {
             <button className="plus-btn" onClick={handlePlus} type="button"><img src={plus} alt="" /></button>
             <button onClick={SubmitQty} className="add-btn" type="button"><img style={{ color: "white" }} src={cart} alt="" /> &nbsp; &nbsp;&nbsp;&nbsp;Add to cart</button>
 
-            {error}
+            <p>{error}</p>
         </div>
     );
 }

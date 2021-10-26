@@ -72,9 +72,28 @@
     max-width: 50px;
     text-align: center;
     padding: 10px;
+    cursor: pointer;
+    outline: none;
 } 
 
+.minus-btn, .plus-btn{  
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px #999;
+    margin-right: 10px;
+} 
+
+.plus-btn:hover, .minus-btn:hover {
+    background-color: rgb(207, 207, 207)
+}
+
+.plus-btn:active , .minus-btn:active {
+  box-shadow: 1px 3px #666;
+  transform: translateY(4px);
+}
+
 .add-btn{
+    cursor: pointer;
     background-color: var(--color);
     border: none;
     text-align: center;
@@ -89,7 +108,15 @@
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0px;
+
+    cursor: pointer;
+    outline: 0;
+    transition: 0.3s linear;
 }
+
+      .add-btn:hover {
+  transform: scale(0.95);
+        }
 
 .add-cart-content{
     display: flex;

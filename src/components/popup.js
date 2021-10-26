@@ -1,8 +1,5 @@
 import React from 'react';
 import './style.css';
-import iconNext from './images/icon-next.svg'
-import iconClose from './images/icon-close.svg'
-import iconPrevious from './images/icon-previous.svg'
 
 import image1 from './images/image-product-1.jpg'
 import image2 from './images/image-product-2.jpg'

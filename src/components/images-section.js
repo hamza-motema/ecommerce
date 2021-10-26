@@ -50,32 +50,20 @@ export default class ImagesSection extends Component {
         });
     }
     render() {
-
-
         return (
-            <div id="cards">
-                <div className="cards">
+            <div className="card__content">
+                <img onClick={this.togglePopup.bind(this)} src={images[this.state.toggle]} alt="" />
 
-                    <div className="card" id="card_1">
-                        <div className="card__content">
-                            <figure>
-                                <>
-                                    <img onClick={this.togglePopup.bind(this)} src={images[this.state.toggle]} alt="" />
-                                </>
-                            </figure>
-                        </div>
 
-                    </div>
-                    <div className="miniature">
-                        {data.map(({ key }) => {
-                            return (
-                                <>
-                                    <img onClick={() => this.setState({ toggle: key - 1 })} src={array[key - 1]} className="main-image" alt="" key={key} />
-                                </>
-                            );
-                        })}</div>
+                <div className="miniature">
+                    {data.map(({ key }) => {
+                        return (
+                            <>
+                                <img onClick={() => this.setState({ toggle: key - 1 })} src={array[key - 1]} className="main-image" alt="" key={key} />
+                            </>
+                        );
+                    })}
                 </div>
-
                 {this.state.showPopup ?
                     <Popup
                         text='Click "Close Button" to hide popup'

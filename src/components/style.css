@@ -8,6 +8,7 @@
   bottom: 0;
   margin: auto;
   background-color: rgba(0,0,0, 0.5);
+  
 }
 .popup_inner {
   position: absolute;
@@ -15,39 +16,69 @@
   right: 25%;
   top: 25%;
   bottom: 25%;
+  height: 722px;
+  width: 550px;
   margin: auto;
   border-radius: 20px;
+}
+
+.close{
+  height: 20px;
+width: 20px;
+left: 976px;
+top: 92px;
+border-radius: 0px;
 
 }
 
 .popupContent{
-      display: grid;
+  display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
-        align-items: center;
-        justify-items: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .image{
-    width: 50%;
+  height: 550px;
+  width: 550px;
+  left: 446px;
+  top: 136px;
+  border-radius: 15px;
 }
 
 .popup-miniature{
-    
+height: 88px;
+left: 499px;
+top: 726px;
+border-radius: 10px;
+display: flex;
+margin-top: 50px;
+justify-content: space-evenly;
 }
 
 .popup-miniature > img{
-border-radius: 2em;
-width: 20%;
-margin: 10px;
+  width: 88px;
+height: 88px;
+left: 856px;
+top: 726px;
+border-radius: 10px;
+}
+.iconNext, .iconPrevious{
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 56px;
+  width: 56px;
+position: absolute;
 }
 
-.iconNext, .iconPrevious{
-background-color: burlywood;
-border-radius: 50%;
-padding: 1px;
-display: block;
-font-size: 2em;
-cursor: pointer;
+.iconNext{
+left: 530px;
+top: 300px;
+}
+
+.iconPrevious{
+    left: -25px;
+  top: 300px;
 }
 

@@ -1,57 +1,33 @@
-.card{
-    transition: 0.3s;
-	top: 0;
-	padding-top: calc(var(--index) * var(--card-top-offset));
-}
 .main-image{
 	cursor: pointer;
-    padding: 10px;
-	width: 25%;
-	border-radius: 2em;
+	width: 90.14px;
+	height: 88px;
+	left: 213px;
+	top: 685px;
+	border-radius: 10px;
 }
 
 .main-image:hover{
     opacity: 0.5; 
+	border: 2px solid #FF7E1B;
 }
-
 
 .miniature{
     display: flex;
     flex-direction: row;
+	justify-content: space-between;
 }
-
-:root {
-	--card-height: 40vw;
-	--card-margin: 4vw;
-	--card-top-offset: 1em;
-	--numcards: 4;
-	--outline-width: 0px;
-}
-
-
-
 
 .card__content {
-	box-shadow: 0 0.7em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.2);
-	background: rgb(255, 255, 255);
-	color: rgb(10, 5, 7);
-	border-radius: 1em;
 	overflow: hidden;
-	grid-template-areas: "text img";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	align-items: stretch;
-	outline: var(--outline-width) solid lime;
 }
 
-.card__content > figure > img {
+.card__content > img {
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
-}
-
-.card:hover {
-transform: scale(1.02); 
+	border-radius: 15px;
+	margin-bottom: 20px;
 }
 
 

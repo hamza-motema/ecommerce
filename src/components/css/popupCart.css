@@ -1,0 +1,126 @@
+.box-popupcart{
+position: absolute;
+display: flex;
+flex-flow: column;
+height: 256px;
+justify-content: space-around;
+border-radius: 10px;
+top: 100px;
+right: 10%;
+width: 360px;
+height: 256px;
+background: #FFFFFF;
+box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+border-radius: 10px;
+}
+
+.header-popupCart{
+    top: 0px;
+    margin: 0px;
+    padding: 20px;
+    border-width: 2px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.title-popupcart{
+    height: 16px;
+left: 6.67%;
+right: 83.89%;
+top: calc(50% - 16px/2 - 96px);
+text-align: left;
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #1D2026;
+}
+
+
+
+.image-popupcart{
+left: 6.67%;
+right: 79.44%;
+top: 35.94%;
+bottom: 44.53%;
+border-radius: 4px;
+height: 100%;
+}
+.content-popupcart{
+height: 52px;
+top: 92px;
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.text-popupcart{
+height: 26px;
+left: 0%;
+right: 60.75%;
+top: calc(50% - 26px/2 + 13px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+
+color: #69707D;
+}
+
+span{
+    height: 26px;
+    left: 42.06%;
+    right: 28.97%;
+    top: calc(50% - 26px/2 + 13px);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1D2026;
+}
+.checkout-popupcart{
+    background: #FF7E1B;
+    height: 56px;
+    width: 312px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.checkout-popupcart > p{
+height: 16px;
+left: 38.46%;
+right: 38.14%;
+top: calc(50% - 16px/2 + 2px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+
+.delete-popupcart{
+height: 24px;
+width: 20px;
+}

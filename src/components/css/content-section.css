@@ -6,50 +6,88 @@
 }
 
 .brand{
-    color: var(--color);
-    text-transform:uppercase;
-    margin-bottom: 50px;
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 13px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #FF7E1B;
+}
+
+.title{
+    height: 96px;
+
+    margin: 20px 0 30px 0;
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 48px;
+color: #1D2026;
 }
 
 .texte{
-    text-align: justify;
-    font-family: Kumbh Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-bottom: 50px;
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+color: #69707D;
 
 }
 .price{
-    font-family: Kumbh Sans;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #1D2026;
+height: 28px;
+left: 0%;
+right: 38.73%;
+top: calc(50% - 28px/2 - 16px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 28px;
+
+color: #1D2026;
 
 }
 
 .reduction-bloc{
+    margin: 20px 0 20px 0;
     display: flex;
     justify-content: space-between;
     width: 20%;
 }
 .reduction{
-    color: var(--color);
-    background-color: #FEEEDF;
-    display: inline-block;
-    font-family: Kumbh Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 10px;
+height: 16px;
+left: 15.69%;
+right: 15.69%;
+top: calc(50% - 16px/2 + 1.5px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+margin: 5px;
+
+color: #FF7E1B;
+
+}
+
+.price-bloc{
+    margin-left: 20px;
+    display: flex;
+    height: 27px;
+    background: #FFEEE2;
+    border-radius: 6px;
 }
 .base-price{
     height: 26px;
@@ -66,57 +104,76 @@
     color: #B6BCC8;
 }
 
+
+
+.plus-minus-value{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 56px;
+    width: 160px;
+    background: #F6F8FD;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.value{
+
+    left: 46.82%;
+    right: 46.82%;
+    top: calc(50% - 16px/2 + 3px);
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #1D2026;
+}
 .minus-btn, .plus-btn, .value{
     border: none;
-    background: #F8F8F8;
+    background: #F6F8FD;
+
     max-width: 50px;
     text-align: center;
     padding: 10px;
     cursor: pointer;
     outline: none;
 } 
-
-.minus-btn, .plus-btn{  
-    outline: none;
-    border-radius: 15px;
-    box-shadow: 2px 2px #999;
-    margin-right: 10px;
-} 
-
-.plus-btn:hover, .minus-btn:hover {
-    background-color: rgb(207, 207, 207)
-}
-
-.plus-btn:active , .minus-btn:active {
-  box-shadow: 1px 3px #666;
-  transform: translateY(4px);
-}
-
 .add-btn{
+width: 278.62px;
+height: 56px;
+left: 177.21px;
+top: 370px;
     cursor: pointer;
-    background-color: var(--color);
-    border: none;
-    text-align: center;
-    color: white;
-    font-family: Kumbh Sans;
+left: 38.88%;
+right: 0%;
+top: 86.85%;
+bottom: 0%;
     display: flex;
     align-items: center;
-    padding: 15px 50px 15px 50px;
-    margin-left: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    outline: 0;
-    transition: 0.3s linear;
+    border: none;
+    text-align: center;
+background: #FF7E1B;
+border-radius: 10px;
 }
 
-      .add-btn:hover {
-  transform: scale(0.95);
-        }
+.addToCart{
+height: 16px;
+left: 27.73%;
+right: 0%;
+top: calc(50% - 16px/2 + 2.5px);
+text-align: center;
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+margin-right: auto;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
 
 .add-cart-content{
     display: flex;

@@ -3,10 +3,22 @@
 }
 
 .avatar{
+  cursor: pointer;
     width: 50px;
+    height: 50px;
+    left: 1225px;
+    top: 28px;
+}
+
+.avatar:hover{
+border: 2px solid #FF7E1B;
+box-sizing: border-box;
+border-radius: 50%;
+
 }
 
 .iconCart{
+  cursor: pointer;
 margin-right: 40px;
 }
 

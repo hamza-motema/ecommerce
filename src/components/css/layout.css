@@ -1,11 +1,30 @@
 .container{
     display: flex;
-    height: 565px;
+    height: 100%;
     flex-direction: row;
 }
 
+.ImageSection{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContentSection{
+  width: 50%;
+}
 @media (max-width: 1000px) {
   .container {
     flex-direction: column;
   }
+  .ImageSection{
+  width: 100%;
+}
+}
+
+@media (max-width: 1400px) {
+  .ContentSection{
+    width: 100%;
+    }
 }

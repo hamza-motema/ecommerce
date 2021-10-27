@@ -20,6 +20,7 @@
 
 .card__content {
 	overflow: hidden;
+	width: 500px;
 }
 
 .card__content > img {
@@ -30,5 +31,22 @@
 	margin-bottom: 20px;
 }
 
-
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .card__content{
+    width: -webkit-fit-content !important;
+  }
+  .miniature{
+    display: none;
+  }
+  .card__content > img{
+    cursor: initial;
+  }
+  #IP{
+	  left: 0% !important;
+  }
+    #IN{
+	  left: 90% !important;
+  }
+}
 

@@ -4,9 +4,6 @@ import thumbnail_image1 from './images/image-product-1-thumbnail.jpg'
 import { AiOutlineDelete } from "react-icons/ai";
 
 class popupCart extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div className="box-popupcart">

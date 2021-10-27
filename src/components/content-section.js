@@ -10,16 +10,16 @@ export default class ContentSection extends Component {
                 <h1 className="title">Fall Limited Edition Sneakers</h1>
                 <p className="texte">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
-                <div className="reduction-bloc">
-
-                    <p className="price">$125.00</p>
-
-                    <div className="price-bloc">
-                        <p className="reduction">50%</p>
+                <div className="price-section">
+                    <div className="reduction-bloc">
+                        <p className="price">$125.00</p>
+                        <div className="price-bloc">
+                            <p className="reduction">50%</p>
+                        </div>
                     </div>
+                    <p className="base-price">$250.00</p>
                 </div>
 
-                <p className="base-price">$250.00</p>
 
                 <Btn />
 

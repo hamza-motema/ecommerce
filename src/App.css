@@ -18,3 +18,20 @@ body {
     padding: 50px 100px 0px 100px;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  body {
+    padding: 50px 100px 0px 100px;
+  }
+  .card__content{
+    width: 400px;
+    margin: auto;
+  }
+}
+

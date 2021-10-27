@@ -7,10 +7,10 @@ export default class Layout extends Component {
     render() {
         return (
             <div className="container">
-                <div>
+                <div className="ImageSection">
                     <ImageSection />
                 </div>
-                <div>
+                <div className="ContentSection">
                     <ContentSection />
                 </div>
             </div>

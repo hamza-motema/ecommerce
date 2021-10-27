@@ -12,6 +12,8 @@
 }
 .popup_inner {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   left: 25%;
   right: 25%;
   top: 25%;
@@ -23,11 +25,12 @@
 }
 
 .close{
-  height: 20px;
-width: 20px;
-left: 976px;
-top: 92px;
-border-radius: 0px;
+
+margin-bottom: 10px;
+cursor: pointer;
+float: right;
+color: white;
+font-size: 2em;
 
 }
 
@@ -80,5 +83,15 @@ top: 300px;
 .iconPrevious{
     left: -25px;
   top: 300px;
+}
+
+.outline{
+  width: 30px;
+  height: 100%;
+}
+
+
+.outline:hover{
+  color: var(--color);
 }
 

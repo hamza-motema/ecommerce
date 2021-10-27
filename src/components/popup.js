@@ -10,7 +10,7 @@ import thumbnail_image1 from './images/image-product-1-thumbnail.jpg'
 import thumbnail_image2 from './images/image-product-2-thumbnail.jpg'
 import thumbnail_image3 from './images/image-product-3-thumbnail.jpg'
 import thumbnail_image4 from './images/image-product-4-thumbnail.jpg'
-import { AiOutlineClose, AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 const array = [
     thumbnail_image1, thumbnail_image2, thumbnail_image3, thumbnail_image4
 ]
@@ -47,13 +47,15 @@ class Popup extends React.Component {
         return (
             <div className='popup'>
                 <div className='popup_inner'>
-                    <AiOutlineClose onClick={this.props.closePopup} style={{ cursor: 'pointer', float: 'right', color: 'white', fontSize: '2em' }} className="close" />
+                    <div>
+                        <AiOutlineClose onClick={this.props.closePopup} className="close" />
+
+                    </div>
 
                     <div className="popupContent">
-                        <AiOutlineArrowLeft onClick={this.previousPopup} className="iconPrevious" />
+                        <div className="iconPrevious"><AiOutlineLeft onClick={this.previousPopup} className="outline" /></div>
                         <img src={images[this.state.toggle]} alt="" className="image" />
-                        <AiOutlineArrowRight onClick={this.nextPopup} className="iconNext" />
-
+                        <div className="iconNext"><AiOutlineRight onClick={this.nextPopup} className="outline" /></div>
                     </div>
                     <div className="popup-miniature">
                         <img src={array[0]} alt="" className="" />

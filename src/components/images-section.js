@@ -9,6 +9,8 @@ import thumbnail_image1 from './images/image-product-1-thumbnail.jpg'
 import thumbnail_image2 from './images/image-product-2-thumbnail.jpg'
 import thumbnail_image3 from './images/image-product-3-thumbnail.jpg'
 import thumbnail_image4 from './images/image-product-4-thumbnail.jpg'
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+
 
 import Popup from './popup';
 const data = [
@@ -40,21 +42,50 @@ const images = [
 export default class ImagesSection extends Component {
     constructor(props) {
         super(props);
-        this.state = { showPopup: false, toggle: 0 };
+        this.state = {
+            showPopup: false,
+            toggle: 0,
+            matches: window.matchMedia("(min-width: 600px)").matches,
 
+        };
+        this.previousPopup = this.previousPopup.bind(this);
+        this.nextPopup = this.nextPopup.bind(this);
+    }
+
+    componentDidMount() {
+        const handler = e => this.setState({ matches: e.matches });
+        window.matchMedia("(min-width: 600px)").addEventListener('change', handler);
     }
 
     togglePopup() {
-        this.setState({
-            showPopup: !this.state.showPopup
-        });
+        if (this.state.matches) {
+            this.setState({
+                showPopup: !this.state.showPopup
+            });
+        }
+    }
+
+    previousPopup() {
+        if (this.state.toggle > 0) {
+            this.setState({
+                toggle: this.state.toggle - 1
+            });
+        }
+    }
+
+    nextPopup() {
+        if (this.state.toggle < 4) {
+            this.setState({
+                toggle: this.state.toggle + 1
+            });
+        }
     }
     render() {
         return (
             <div className="card__content">
+                {!this.state.matches && (<div id="IP" className="iconPrevious"><AiOutlineLeft onClick={this.previousPopup} className="outline" /></div>)}
                 <img onClick={this.togglePopup.bind(this)} src={images[this.state.toggle]} alt="" />
-
-
+                {!this.state.matches && (<div id="IN" className="iconNext"><AiOutlineRight onClick={this.nextPopup} className="outline" /></div>)}
                 <div className="miniature">
                     {data.map(({ key }) => {
                         return (

@@ -25,7 +25,7 @@ export default class cart extends Component {
                     <img className="avatar" src={avatar} alt="avatar" />
                 </div>
                 {this.state.showPopup ?
-                    <PopupCart
+                    <PopupCart style={{ display: 'flex' }}
                         text='Click "Close Button" to hide popup'
                         closePopup={this.togglePopup.bind(this)}
                     />
